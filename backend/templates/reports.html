@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports</title>
+</head>
+<body>
+
+<h1>Handwriting Reports</h1>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>File Name</th>
+    <th>Recognized Text</th>
+    <th>Quality</th>
+    <th>Recommendation</th>
+</tr>
+
+{% for report in reports %}
+
+<tr>
+    <td>{{ report[0] }}</td>
+    <td>{{ report[1] }}</td>
+    <td>{{ report[2] }}</td>
+    <td>{{ report[3] }}</td>
+    <td>{{ report[4] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
